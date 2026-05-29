@@ -1,0 +1,258 @@
+/* 2. ... */
+.pasajes {
+    background-image: url(../images/marDelPlata.jpg);
+    background-position: right  bottom;
+    
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+
+    padding: 25px 50px;
+    padding-bottom: 40px;
+    height: auto;
+}
+
+.pasajes-bs {
+    background-image: url(../images/buenos\ aires.webp);
+    background-position: right  bottom;
+    
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+
+    padding: 25px 50px;
+    padding-bottom: 40px;
+    height: auto;
+}
+
+.pasajes .ubicacion {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+.pasajes .ubicacion h1 {
+    color: white;
+    font-size: var(--h1-size);
+    font-weight: medium;
+    padding: 10px 0;
+}
+
+.pasajes .ubicacion .volver a {
+    color: white;
+    font-size: var(--h5-size);
+    font-weight: medium;
+    padding: 10px 0;
+}
+
+.pasajes .ubicacion .volver span {
+    color: white;
+    font-size: var(--h5-size);
+    font-weight: medium;
+    padding: 10px 0;
+}
+
+.contenedor-pasajes {
+    background-color: var(--background-color);
+    width: 100%;
+    padding: 30px 50px;
+}
+
+.contenedor-pasajes .comprar {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    
+    color: var(--text-color);
+    font-size: var(--h4-size);
+    font-weight: medium;
+    margin: 0 5px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    margin: 0 auto;
+    background-color: white;
+
+    position: relative;
+    top: -4rem;
+    margin-bottom: -6rem;
+}
+
+.contenedor-pasajes .comprar button {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: var(--h4-size);
+    color: white;
+    background-color: var(--color-principal );
+    border: none;
+    width: fit-content;
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.button-busq {
+    padding: 10px 15px;
+}
+
+
+.contenedor-pasajes .comprar input {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: var(--h4-size);
+    color: var(--text-color);
+    background-color: transparent;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+}
+
+.contenedor-pasajes .carta {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 10px;
+}
+
+.contenedor-pasajes .carta label {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.contenedor-pasajes .carta-pasajeros {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.contenedor-pasajes .carta-pasajeros input {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: var(--h4-size);
+    color: var(--text-color);
+    background-color: transparent;
+    outline: none;
+    resize: none;
+    border-radius: 0;
+    text-align: center;
+}
+
+.contenedor-pasajes .carta-pasajeros button {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: var(--h4-size);
+    color: white;
+    background-color: var(--color-principal );
+
+    margin: 0 0;
+    height: 25px;
+
+    border: none;
+    width: auto;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+/* 3 */
+
+.terminal {
+    margin: 0 50px;
+}
+
+.terminal h2 {
+    color: var(--text-color);
+    font-size: var(--h2-size);
+    font-weight: medium;
+    padding-bottom: 20px;
+}
+
+.terminal .bloques {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    background-color: white;
+    border-radius: 20px;
+}
+
+.terminal .bloques .bloque-informacion {
+    width: 50%;
+}
+
+.titulo-terminal {
+    background-color: var(--color-principal);
+    border-top-left-radius: 20px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.texto-terminal {
+    padding: 15px;
+}
+
+.terminal .bloques .bloque-informacion h3 {
+    color: var(--text-color);
+    font-size: var(--h3-size);
+    font-weight: medium;
+    padding-bottom: 10px;
+}
+
+.terminal .bloques .bloque-informacion p {
+    color: var(--text-color);
+    font-size: var(--h4-size);
+    font-weight: medium;
+    padding-bottom: 10px;
+}
+
+.terminal .bloques .bloque-ubicacion {
+    width: 50%;    
+}
+
+.terminal .bloques .bloque-ubicacion iframe {
+    border-radius: 20px 0px 0px 20px;
+    width: 100%;
+}
+
+/* 4 */
+.servicios {
+    margin: 10px 50px;
+}
+
+.servicios h2 {
+    color: var(--text-color);
+    font-size: var(--h2-size);
+    font-weight: medium;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 1023px) {
+
+    .bloques {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .terminal .bloques .bloque-ubicacion {
+    width: 100%;    
+    }
+
+
+    .terminal .bloques .bloque-informacion {
+    width: 100%;    
+    }
+
+    .titulo-terminal {
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .bloque-ubicacion iframe {
+        border-radius: 0px 0px 20px 20px;
+    }
+}
