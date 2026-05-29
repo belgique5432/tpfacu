@@ -53,6 +53,7 @@ fieldset {
     border-radius: 20px;
     
     background-color: white;
+    box-shadow: 5px 5px 5px 5px rgba(0.2, 0.2, 0.2, 0.2);
     margin: 0 auto;
     padding: 15px;
 
@@ -113,6 +114,9 @@ fieldset {
 }
 
 .informacion-terminal .terminal-ubicacion {
+    box-shadow: 5px 5px 5px 5px rgba(0.2, 0.2, 0.2, 0.2);
+    border-radius: 20px;
+
     width: 43%;
     max-width: 640px;
 }
@@ -193,5 +197,9 @@ fieldset {
 
     .informacion {
         padding: 10px 10px;
+    }
+
+    .informacion-terminal .terminal-ubicacion {
+        box-shadow: 0 0 0 0;
     }
 }
