@@ -125,6 +125,77 @@ fieldset {
     border-radius: 20px;
 }
 
+.empresas-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+
+}
+
+.empresas-article{
+    display: flex;
+    justify-content: center;
+}
+
+.empresas-container h2 {
+    text-align: center;
+    width: fit-content;
+    align-self: center;
+}
+
+.cards-empresas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 5;
+}
+
+.empresa-card {
+    width: 250px;
+    height: 150px;
+    background-color: #fff;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 5px 5px rgba(0.2, 0.2, 0.2, 0.2);
+}
+
+.article-servicio {
+    text-align: left;
+}
+
+.servicios-section {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+
+.ul-servicios {
+    display: grid;
+    grid-template-columns:repeat(3, minmax(100px, 1fr));
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    column-gap: 5rem;
+    text-align: left;
+}
+
+.ul-servicios li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+
+
+
 /* --> Media <-- */
 @media (min-width: 1024px) {
     .formulario-pasajes .opciones {
@@ -157,6 +228,11 @@ fieldset {
         width: 100%;
     }
 
+        .cards-empresas-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     .formulario-pasajes .fechas {
         display: flex;
         justify-content: center;
@@ -180,6 +256,18 @@ fieldset {
         width: 100%;
         max-width: 100%;
     }
+    
+    .article-servicio {
+        text-align: left;
+        justify-content: flex-start;
+        width: fit-content;
+    }
+
+    .ul-servicios {
+        display: grid;
+        grid-template-columns:repeat(2, minmax(100px, 1fr));
+        text-align: left;
+    }
 }
 
 @media (max-width: 768px) {
@@ -202,4 +290,25 @@ fieldset {
     .informacion-terminal .terminal-ubicacion {
         box-shadow: 0 0 0 0;
     }
+
+    .cards-empresas-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .article-servicio {
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    .servicios-section{
+        display: inline;
+    }
+
+    .ul-servicios {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
 }

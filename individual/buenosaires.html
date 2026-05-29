@@ -19,7 +19,7 @@
     <nav class="navbar">
         <ul class="izquierda">
             <li><img src="images/logo smart bus.png" alt="logo"></li>
-            <li><a href="/">SmartBus</a></li>
+            <li><a href="#">SmartBus</a></li>
         </ul>
 
         <ul class="derecha">
@@ -28,6 +28,16 @@
             <li><a href="">Nosotros</a></li>
             <li><a href="">Contacto</a></li>
         </ul>
+
+                <div class="mobile-nav">
+            <button class="burger-menu" id="burger-menu"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links" id="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Main -->
@@ -89,6 +99,28 @@
                         <p><strong>Cómo llegar:</strong> Podés llegar en colectivo con más de 30 líneas (5, 6, 7, 9, 20, 21, 22, 23, 26, 28, 33, 45, 50, 51, 54, 56, 61, 62, 70, 75, 91, 100, 101, 106, 108, 115, 126, 129, 130, 132, 143, 150, 152 y 195), en subte Línea C (estación Retiro) o trenes Mitre, San Martín y Belgrano Norte (300 m). También podés usar taxi o remis.</p>
                         <p><strong>Horario:</strong> Acceso: de Lunes a Domingo las 24hs — Boleterías: de Lunes a Domingo las 24hs</p>
                     </address>
+                                       <article class="article-servicio">
+                        <h2>Servicios disponibles</h2>
+                        <section class="servicios-section">
+                            <ul class="ul-servicios">
+                                <div>
+                                    <li><img src="./images/iconos/wifi_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p>WiFi</p></li>
+                                    <li><img src="./images/iconos/luggage_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p>Guarda equipajes</p></li>
+                                    <li><img src="./images/iconos/directions_car_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p>Estacionamiento</p></li>
+                                </div>
+                                <div>
+                                    <li><img src="./images/iconos/wc_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p>Baños públicos</p></li>
+                                    <li><img src="./images/iconos/local_taxi_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p>Paradas de taxi</p></li>
+                                    <li><img src="./images/iconos/store_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p>Locales comerciales</p></li>
+                                </div>
+                                <div>
+                                    <li><img src="./images/iconos/local_cafe_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p>Restaurantes y cafés</p></li>
+                                    <li><img src="./images/iconos/airline_seat_recline_normal_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p>Salas de espera</p></li>
+                                    <li><img src="./images/iconos/attach_money_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p>Cajero automático</p></li>
+                                </div>
+                            </ul>
+                        </section>
+                    </article>
                 </div>
 
                 <div class="terminal-ubicacion">
@@ -102,6 +134,18 @@
                             title="Mapa de la Terminal de Ómnibus de Retiro">
                         </iframe>
                     </figure>
+                </div>
+            </section>
+        </article>
+
+                <article class="empresas-article">
+            <section class="empresas-container">
+                <h2>Empresas asociadas</h2>
+                <div class="cards-empresas-container">
+                    <div class="empresa-card"> <a href="https://viabariloche.com.ar/"><img src="./images/logo-via-bariloche.png" alt=""></a></div>
+                    <div class="empresa-card"><a href="https://www.plusmar.com.ar/es"><img src="./images/logo-plusmar.png" alt=""></a></div>
+                    <div class="empresa-card"><a href="https://www.condorestrella.com.ar/en"><img src="./images/logo-condor-estrella.png" alt=""></a></div>
+                    <div class="empresa-card"><a href="https://viatac.com.ar/"><img src="./images/logo-via-tac.png" alt=""></a></div>
                 </div>
             </section>
         </article>
@@ -160,9 +204,9 @@
                 <li><hr></li>
                 <li>
                     <ul class="links">
-                        <li><a href="">Buenos Aires</a></li>
-                        <li><a href="">Mar del plata</a></li>
-                        <li><a href="">Bahía Blanca</a></li>
+                        <li><a href="./buenosaires.html">Buenos Aires</a></li>
+                        <li><a href="./mardel.html">Mar del plata</a></li>
+                        <li><a href="#">Bahía Blanca</a></li>
                     </ul>
                 </li>
             </ul>
@@ -179,5 +223,15 @@
             <p>copy@2026 SmartBus. Todos los derechos reservados. | Políticas de Cookies</p>
         </div>
     </footer>
+        <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burgerMenu = document.getElementById('burger-menu');
+            const navLinks = document.getElementById('nav-links');
+
+            burgerMenu.addEventListener('click', () => {
+                navLinks.classList.toggle('is-open');
+            });
+        });
+    </script>
 </body>
 </html>
