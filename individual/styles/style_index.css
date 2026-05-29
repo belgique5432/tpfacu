@@ -27,8 +27,10 @@ body {
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+
     color: var(--text-color);
     background-color: var(--background-color);
+
     max-width: 100%;
     margin: 0 auto;
 }
@@ -43,136 +45,105 @@ a {
     color: var(--text-color);
 }
 
-h1 {
-    font-size: var(--h1-size);
-    font-weight: normal;
-}
-
-h2 {
-    font-size: var(--h2-size);
-    font-weight: normal;
-}
-
-h3 {
-    font-size: var(--h3-size);
-    font-weight: normal;
-}
-
-h4 {
+button {
+    font-family: "Space Grotesk", sans-serif;
     font-size: var(--h4-size);
-    font-weight: normal;
+    color: var(--text-color);
+    
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
 }
 
-h5 {
-    font-size: var(--h5-size);
-    font-weight: normal;
+input {
+    font-family: "Space Grotesk", sans-serif;
+    color: var(--text-color);
+
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: transparent;
 }
 
-/* --> NAVBAR <-- */
-nav {
+/* --> Navbar <-- */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 0 50px;
+    
+    padding: 0 100px;
     height: 80px;
 }
 
-nav .izquierda {
+.navbar .izquierda {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
-nav .izquierda img {
+.navbar .izquierda img {
     width: 70px;
     height: auto;
-    margin: 0 5px;
 }
 
-nav .izquierda a {
-    color: var(--text-color);
+.navbar .izquierda a {
     font-size: var(--h2-size);
-    font-weight: medium;
-    margin: 0 5px;
 }
 
-nav .derecha{
+.navbar .derecha{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-}
-
-nav .derecha li {
-    color: var(--text-color);
-    margin: 0 20px;
+    gap: 50px;
     font-size: var(--h4-size);
-    font-weight: medium;
 }
 
-/* --> FOOTER <-- */
+/* --> Footer <-- */
 footer {
     background-color: var(--background-color2);
 }
 
-/* OFERTAS */
-.ofertas {
+/* --> Ofertas <-- */
+.ofertas-formulario {
     background-color: var(--background-color2);
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-
-    padding: 0 50px;
-    height: auto;
-}
-
-.ofertas h3 {
-    color: white;
-    margin: 0 20px;
-    padding: 10px 0;
-}
-
-.ofertas {
-    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 0;
+
+    padding: 10px 100px;
     padding-bottom: 80px;
 }
 
-.ofertas form {
+.ofertas-formulario h2 {
+    color: white;
+    font-size: var(--h3-size);
+    font-weight: normal;
+
+    padding: 10px 0;
+}
+
+.ofertas-formulario form {
     background-color: var(--background-color);
     padding: 5px 10px;
     border-radius: 10px;
 }
 
-.ofertas form input {
-    font-family: "Space Grotesk", sans-serif;
+.ofertas-formulario form input {
     font-size: var(--h4-size);
-    color: var(--text-color);
-    border: 2px solid transparent;
-    background-color: transparent;
+    border: 2px transparent;
+    
     outline: none;
     resize: none;
     width: 300px;
 }
 
-.ofertas form button {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: var(--h4-size);
-    color: var(--text-color);
+.ofertas-formulario form button {
     background-color: var(--link-color);
-    border: none;
-    width: auto;
-    cursor: pointer;
-    padding: 5px;
-    border-radius: 10px;
 }
 
-/* LOGO */
-.contenedor {
+.ofertas-logo {
     background-color: var(--background-color);
     width: 100%;
     padding-top: 15px;
@@ -180,7 +151,7 @@ footer {
     padding-right: 25px;
 }
 
-footer .footer_logo {
+.ofertas-logo a {
     width: 100px;
     height: 100px;
     border-radius: 100%;
@@ -198,132 +169,100 @@ footer .footer_logo {
     margin-bottom: -4rem;
 }
 
-footer .footer_logo .logo {
+.ofertas-logo img {
     width: auto;
 }
 
-footer .final {
+/* --> Final <-- */
+.final {
     background-color: var(--background-color2);
-    padding: 0 50px;
+    padding: 10px 100px;
 
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
-
-    padding-top: 20px;
+    align-items: flex-start;
 }
 
-footer .final h3 {
-    color: white;
-    padding-bottom: 5px;
-}
-
-footer .final li {
-    font-size: var(--h5-size);
-    color: white;
-    padding-bottom: 5px;
-}
-
-footer .final p {
-    font-size: var(--h5-size);
-    color: white;
-    padding-bottom: 5px;
-}
-
-footer .final .carta {
+.final .carta {
     display: flex;
     flex-direction: column;
-    align-items: left;
-    justify-content: space-between;
-    padding-bottom: 20px;
-    width: 20%;
+    align-items: stretch;
+    
+    width: 24%;
 }
 
-footer .final .carta hr {
-    border: none;
+.final .carta a,
+.final .carta p {
+    color: white;
+    font-size: var(--h5-size);
+}
+
+.final .carta li {
+    color: white;
+    font-size: var(--h3-size);
+}
+
+.final .carta hr {
+    background-color: var(--color-principal);
     height: 2px;
     width: 50%;
-    background-color: var(--color-principal);
-
-    margin-bottom: 5px;
+    border: none;
 }
 
-footer .final .carta span {
-    width: auto;
-    font-size: var(--h5-size);
-    color: white;
-    padding-bottom: 5px;
-}
-
-footer .final .carta .footer_marca {
+.final .carta .footer_marca {
     display: flex;
     align-items: center;
-    justify-content: left;    
+    justify-content: left;
+    gap: 10px;
 }
 
-footer .final .carta .footer_marca img {
+.final .carta .footer_marca img {
     width: 75px;
     height: auto;
-    padding-right: 5px;
-    padding-bottom: 5px;
 }
 
-footer .final .carta .links {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
+.final .carta .footer_marca p {
+    font-size: var(--h3-size);
 }
 
-footer .final .carta .links a {
-    width: auto;
-    font-size: var(--h5-size);
-    color: white;
-    padding-bottom: 5px;
-}
-
-footer .derechos {
+/* --> COPYRIGHT <-- */
+.copyright{
     background-color: black;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 5px;
-}
-
-.derechos p {
     color: white;
     font-size: var(--h5-size);
     text-align: center;
 }
 
+/* --> Media <-- */
 @media (max-width: 1023px) {
-    nav {
-        padding: 0 25px;
+    .navbar {
+        padding: 0 50px;
     }
 
     .final {
-        padding: 0 25px;
+        padding: 10px 50px;
     }
 }
 
 @media (max-width: 768px) {
-    nav {
-        padding: 0 5px;
+    .navbar {
+        padding: 0 10px;
     }
 
-    nav .derecha{
+    .navbar .derecha{
         display: none;
     }
 
-    footer .final {
-        padding: 0 5px;
+    .final {
+        padding: 10px 10px;
 
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 15px;
     }
 
-    footer .final .carta {
+    .final .carta {
         width: auto;
     }
 }

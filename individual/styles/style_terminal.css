@@ -1,258 +1,197 @@
-/* 2. ... */
-.pasajes {
-    background-image: url(../images/marDelPlata.jpg);
-    background-position: right  bottom;
-    
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-direction: column;
+:root {
+    --text-color: #1a1c20;
+    --link-color: #FFD341;
+    --background-color: #eeeff1;
+    --background-color2: #1E1E1E;
 
-    padding: 25px 50px;
+    --color-principal: #0E643F;
+
+    --h1-size: 36px;
+    --h2-size: 24px;
+    --h3-size: 20px;
+    --h4-size: 16px;
+    --h5-size: 14px;
+}
+
+fieldset {
+    border: none;
+}
+
+/* --> Primero <-- */
+.primero {
     padding-bottom: 40px;
-    height: auto;
 }
 
-.pasajes-bs {
-    background-image: url(../images/buenos\ aires.webp);
-    background-position: right  bottom;
-    
+.superior {
     display: flex;
-    justify-content: center;
-    align-items: left;
+    justify-content: flex-start;
     flex-direction: column;
 
-    padding: 25px 50px;
-    padding-bottom: 40px;
-    height: auto;
+    color: white;
+
+    padding: 10px 100px;
+    padding-bottom: 50px;
 }
 
-.pasajes .ubicacion {
+.superior .sitios-anteriores {
+    display: flex;
+
+    gap: 15px;
+}
+
+.superior .sitios-anteriores a {
+    color: white;
+}
+
+.formulario-pasajes {
     display: flex;
     justify-content: center;
-    align-items: left;
-    flex-direction: column;
-}
+    align-items: center;
+    gap: 15px;
 
-.pasajes .ubicacion h1 {
-    color: white;
-    font-size: var(--h1-size);
-    font-weight: medium;
-    padding: 10px 0;
-}
-
-.pasajes .ubicacion .volver a {
-    color: white;
-    font-size: var(--h5-size);
-    font-weight: medium;
-    padding: 10px 0;
-}
-
-.pasajes .ubicacion .volver span {
-    color: white;
-    font-size: var(--h5-size);
-    font-weight: medium;
-    padding: 10px 0;
-}
-
-.contenedor-pasajes {
-    background-color: var(--background-color);
-    width: 100%;
-    padding: 30px 50px;
-}
-
-.contenedor-pasajes .comprar {
     width: fit-content;
-    height: fit-content;
     border-radius: 20px;
     
-    color: var(--text-color);
-    font-size: var(--h4-size);
-    font-weight: medium;
-    margin: 0 5px;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-    margin: 0 auto;
     background-color: white;
+    margin: 0 auto;
+    padding: 15px;
 
     position: relative;
-    top: -4rem;
-    margin-bottom: -6rem;
+    top: -2rem;
+    margin-bottom: -4rem;
 }
 
-.contenedor-pasajes .comprar button {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: var(--h4-size);
+.formulario-pasajes button {
     color: white;
-    background-color: var(--color-principal );
-    border: none;
-    width: fit-content;
-    cursor: pointer;
-    margin: 10px;
-    padding: 5px 15px;
-    border-radius: 10px;
+    background-color: var(--color-principal);
 }
 
-.button-busq {
-    padding: 10px 15px;
+.formulario-pasajes input {
+    padding: 5px;
 }
 
-
-.contenedor-pasajes .comprar input {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: var(--h4-size);
-    color: var(--text-color);
-    background-color: transparent;
-    outline: none;
-    resize: none;
-    border-radius: 5px;
-}
-
-.contenedor-pasajes .carta {
+.formulario-pasajes .formulario-carta {
     display: flex;
     flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    padding: 10px;
+    gap: 5px;
 }
 
-.contenedor-pasajes .carta label {
+.formulario-pasajes .fechas {
     display: flex;
-    flex-direction: column;
-    align-items: left;
     justify-content: center;
-}
-
-.contenedor-pasajes .carta-pasajeros {
-    display: flex;
     align-items: center;
-    justify-content: left;
+    gap: 15px;
 }
 
-.contenedor-pasajes .carta-pasajeros input {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: var(--h4-size);
-    color: var(--text-color);
-    background-color: transparent;
-    outline: none;
-    resize: none;
-    border-radius: 0;
-    text-align: center;
-}
+/* --> Información <-- */
+.informacion {
+    padding: 20px 100px;
 
-.contenedor-pasajes .carta-pasajeros button {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: var(--h4-size);
-    color: white;
-    background-color: var(--color-principal );
-
-    margin: 0 0;
-    height: 25px;
-
-    border: none;
-    width: auto;
-    cursor: pointer;
-    border-radius: 0;
-}
-
-/* 3 */
-
-.terminal {
-    margin: 0 50px;
-}
-
-.terminal h2 {
-    color: var(--text-color);
-    font-size: var(--h2-size);
-    font-weight: medium;
-    padding-bottom: 20px;
-}
-
-.terminal .bloques {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 24px;
+}
 
-    background-color: white;
+.informacion .informacion-terminal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.informacion-terminal .terminal-contacto {
+    display: flex; 
+    flex-direction: column;
+    gap: 16px;
+    width: 45%;
+}
+
+.terminal-contacto .texto-terminal {
+    display: flex; 
+    flex-direction: column;
+    gap: 12px;
+}
+
+.informacion-terminal .terminal-ubicacion {
+    width: 43%;
+    max-width: 640px;
+}
+
+.informacion-terminal .terminal-ubicacion iframe {
     border-radius: 20px;
 }
 
-.terminal .bloques .bloque-informacion {
-    width: 50%;
-}
-
-.titulo-terminal {
-    background-color: var(--color-principal);
-    border-top-left-radius: 20px;
-    padding-top: 15px;
-    padding-left: 15px;
-}
-
-.texto-terminal {
-    padding: 15px;
-}
-
-.terminal .bloques .bloque-informacion h3 {
-    color: var(--text-color);
-    font-size: var(--h3-size);
-    font-weight: medium;
-    padding-bottom: 10px;
-}
-
-.terminal .bloques .bloque-informacion p {
-    color: var(--text-color);
-    font-size: var(--h4-size);
-    font-weight: medium;
-    padding-bottom: 10px;
-}
-
-.terminal .bloques .bloque-ubicacion {
-    width: 50%;    
-}
-
-.terminal .bloques .bloque-ubicacion iframe {
-    border-radius: 20px 0px 0px 20px;
-    width: 100%;
-}
-
-/* 4 */
-.servicios {
-    margin: 10px 50px;
-}
-
-.servicios h2 {
-    color: var(--text-color);
-    font-size: var(--h2-size);
-    font-weight: medium;
-    padding-bottom: 20px;
+/* --> Media <-- */
+@media (min-width: 1024px) {
+    .formulario-pasajes .opciones {
+        display: none;
+    }
 }
 
 @media (max-width: 1023px) {
+    .primero {
+        padding-bottom: 0;
+    }
 
-    .bloques {
+    .superior {
+        padding: 10px 50px;
+        padding-bottom: 150px;
+    }
+
+    .formulario-pasajes {
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin: 0 50px;
+        width: auto;
+
+        top: -8rem;
+        margin-bottom: -6rem;
+    }
+
+    .formulario-pasajes .formulario-carta {
+        width: 100%;
+    }
+
+    .formulario-pasajes .fechas {
         display: flex;
+        justify-content: center;
+
+        width: 100%;
+    }
+
+    .informacion {
+        padding: 10px 50px;
+    }
+
+    .informacion .informacion-terminal {
         flex-direction: column;
     }
 
-
-    .terminal .bloques .bloque-ubicacion {
-    width: 100%;    
+    .informacion-terminal .terminal-contacto {
+        width: 100%;
     }
 
+    .informacion-terminal .terminal-ubicacion {
+        width: 100%;
+        max-width: 100%;
+    }
+}
 
-    .terminal .bloques .bloque-informacion {
-    width: 100%;    
+@media (max-width: 768px) {
+    .superior {
+        padding: 10px 10px;
+        padding-bottom: 150px;
     }
 
-    .titulo-terminal {
-        border-radius: 20px 20px 0px 0px;
+    .formulario-pasajes {
+        margin: 0 10px;
+
+        top: -8rem;
+        margin-bottom: -7rem;
     }
 
-    .bloque-ubicacion iframe {
-        border-radius: 0px 0px 20px 20px;
+    .informacion {
+        padding: 10px 10px;
     }
 }
